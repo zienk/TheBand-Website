@@ -22,6 +22,10 @@ html {
 4. Kiểu dáng của nó ? (Kiểu chữ, hình dáng,...)
 */
 
+.clear {
+    clear: both;
+}
+
 #main {
 
 }
@@ -42,10 +46,6 @@ html {
 
 #nav, .subnav {
     list-style: none;
-}
-
-#nav {
-
 }
 
 #nav > li {
@@ -149,6 +149,66 @@ html {
 
 #content {
 
+}
+
+#content .content-section {
+    width: 800px;
+    padding: 64px 0;
+    margin: 0 auto;
+}
+
+#content .section-heading {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+#content .section-sub-heading {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+    /* 
+    opacity: độ mờ
+    0 -> 1
+    */
+}
+
+#content .about-text {
+    margin-top: 15px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.4;
+    /* 
+    Tiếng Anh: 1.4 
+    Tiếng Việt: 1.6
+    */
+}
+
+#content .member-list {
+    margin-top: 47px;
+    /* đã thay thế bằng clear both overflow: hidden; */
+}
+
+#content .member-item {
+    /* dạt từ dọc sang trái */
+    float: left;
+    width: calc(100% / 3);
+    /* width: 33.33333%; */
+    text-align: center;
+}
+
+#content .member-name {
+    font-size: 15px;
+}
+
+#content .member-img {
+    width: 154px;
+    margin-top: 15px;
+    border-radius: 4px;
 }
 
 #footer {
