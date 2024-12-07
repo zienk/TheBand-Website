@@ -315,14 +315,20 @@ html {
     bottom: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.4);
-    display: flex;
     align-items: center;
     justify-content: center;
+    /* display: flex; */
+    display: none;
+}
+
+.modal.open {
+    display: flex;
 }
 
 .modal-container {
     background-color: #fff;
     width: 900px;
+    max-width: calc(100% - 32px);
     min-height: 200px;
     position: relative;
 }
@@ -365,8 +371,38 @@ html {
 .modal-label {
     display: block;
     font-size: 15px;
+    margin-bottom: 12px;
 }
 
 .modal-input {
     border: 1px #ccc solid;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+
+#buy-tickets {
+    background-color: #009688;
+    border: none;
+    color: #fff;
+    width: 100%;
+    font-size: 15px;
+    padding: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+#buy-tickets:hover {
+    opacity: 0.9;
+}
+
+.modal-footer {
+    padding: 16px;
+    text-align: right;
+}
+
+.modal-footer a {
+    color: #2196F3;
 }
