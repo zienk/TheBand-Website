@@ -22,6 +22,8 @@ html {
 4. Kiểu dáng của nó ? (Kiểu chữ, hình dáng,...)
 */
 
+/* Common */
+
 .clear {
     clear: both;
 }
@@ -29,6 +31,49 @@ html {
 .text-white {
     color: #fff !important;
 }
+
+.text-center {
+    text-align: center !important; 
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-third {
+    width: calc(100% / 3);
+}
+
+/* Main */
 
 #main {
 
@@ -197,22 +242,25 @@ html {
     /* đã thay thế bằng clear both overflow: hidden; */
 }
 
-#content .member-item {
-    /* dạt từ dọc sang trái */
-    float: left;
-    width: calc(100% / 3);
-    /* width: 33.33333%; */
-    text-align: center;
-}
-
 #content .member-name {
     font-size: 15px;
+    cursor: pointer;
+}
+
+
+#content .member-name:hover {
+    color: palevioletred;
+    font-weight: bolder;
 }
 
 #content .member-img {
     width: 154px;
     margin-top: 15px;
     border-radius: 4px;
+}
+
+#content .member-img:active {
+    opacity: 0.95;
 }
 
 /* Tour section */
@@ -256,12 +304,11 @@ html {
 /* Places */
 
 .places-list {
-    margin: 32px -8px 48px;
+    margin-top: 32px;
+    margin-bottom: 48px;
 }
 .place-item {
-    float: left;
     width: calc(100% /3);
-    padding: 0 8px;
 }
 .place-img {
     width: 100%;
@@ -303,6 +350,47 @@ html {
 .place-buy-btn:hover {
     background-color: #ccc;
     color: #000;
+}
+
+/* Contact form*/
+.contact-content {
+    margin-top: 48px;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.contact-form .form-submit-btn {
+    font-size: 15px;
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #000;
+    padding: 10px 16px;
+    float: right;
+    cursor: pointer;
+}
+
+.contact-form .form-submit-btn:hover {
+    background-color: #ccc;
+    color: #000;
+    border: 1px solid #ccc;
 }
 
 /* Footer section */
