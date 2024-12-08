@@ -36,6 +36,26 @@ html {
     text-align: center !important; 
 }
 
+.btn {
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.pull-right {
+    float: right !important;
+}
+
 .mt-8 {
     margin-top: 8px !important;
 }
@@ -202,7 +222,7 @@ html {
 
 #content .content-section {
     width: 800px;
-    padding: 64px 0;
+    padding: 64px 0 112px   ;
     margin: 0 auto;
 }
 
@@ -305,7 +325,6 @@ html {
 
 .places-list {
     margin-top: 32px;
-    margin-bottom: 48px;
 }
 .place-item {
     width: calc(100% /3);
@@ -336,21 +355,7 @@ html {
     margin-top: 15px;
     line-height: 1.4;
 }
-.place-buy-btn {
-    color: #fff;
-    background-color: #000;
-    text-decoration: none;
-    padding: 11px 16px;
-    display: inline-block;
-    margin-top: 15px;
-    border: none;
-    cursor: pointer;
-}
 
-.place-buy-btn:hover {
-    background-color: #ccc;
-    color: #000;
-}
 
 /* Contact form*/
 .contact-content {
@@ -377,26 +382,46 @@ html {
     width: 100%;
 }
 
-.contact-form .form-submit-btn {
-    font-size: 15px;
-    color: #fff;
-    background-color: #000;
-    border: 1px solid #000;
-    padding: 10px 16px;
-    float: right;
-    cursor: pointer;
-}
-
-.contact-form .form-submit-btn:hover {
-    background-color: #ccc;
-    color: #000;
-    border: 1px solid #ccc;
+/* Map section */
+.map-section img {
+    width: 100%;
 }
 
 /* Footer section */
 #footer {
- 
+    padding: 64px 16px;
+    text-align: center;
 }
+
+#footer .socials-list {
+    font-size: 24px;
+}
+
+#footer .socials-list a {
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+#footer .socials-list a:hover {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#footer .copyright {
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .copyright a {
+    color: rgba(0, 0, 0, 0.6);  
+}
+
+#footer .copyright a:hover {
+    color: rgba(194, 77, 232, 0.6);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Modal */
 
 .modal {
     position: fixed;
