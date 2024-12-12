@@ -46,6 +46,8 @@ html {
     margin-top: 15px;
     border: none;
     cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 .btn:hover {
@@ -100,9 +102,9 @@ html {
 
 /* Main */
 
-#main {
+/* #main {
 
-}
+} */
 
 #header {
     position: fixed;
@@ -213,10 +215,10 @@ html {
 }
 
 #slider {
-    position: relative;
+    position: relative; 
     margin-top: 46px;
     padding-top: 50%;
-    background: url(https://cdn.oneesports.gg/cdn-data/2023/11/LeagueofLegends_Worlds2023_OpeningCeremony_NewJeans-1024x576.jpg) top center / cover no-repeat;
+    background: url('../img/slider/slider1.jpg') top center / cover no-repeat;
 }
 
 #slider .text-content {
@@ -238,11 +240,12 @@ html {
 #slider .text-description {
     font-size: 15px;
     margin-top: 25px;
+    text-shadow: 0 0 1px #000;
 }
 
-#content {
+/* #content {
 
-}
+} */
 
 #content .content-section {
     width: 800px;
